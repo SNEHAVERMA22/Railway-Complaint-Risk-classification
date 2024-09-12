@@ -9,7 +9,7 @@ import joblib
 # Load the vectorizer and model
 vectorizer = joblib.load(open("tfidf_vectorizer.pkl", 'rb'))
 
-model = pickle.load(open("logistic_regression_model (1).pkl", 'rb'))
+model = pickle.load(open("logistic_regression_model.pkl", 'rb'))
 
 # Streamlit UI
 st.markdown(
