@@ -7,8 +7,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import joblib
 
 # Load the vectorizer and model
-vectorizer = joblib.load(open(r"C:\Users\verma\Downloads\tfidf_vectorizer (1).pkl", 'rb'))
-model = pickle.load(open(r"C:\Users\verma\Downloads\logistic_regression_model (1).pkl", 'rb'))
+vectorizer = joblib.load(open("tfidf_vectorizer.pkl", 'rb'))
+
+model = pickle.load(open("logistic_regression_model (1).pkl", 'rb'))
 
 # Streamlit UI
 st.markdown(
